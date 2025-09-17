@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Contacto</title>
+</head>
+
+<body>
+    <h1>Ingreso de Usuarios Nuevo</h1> 
+
+    <form action="generaIngreso" method="post">
+        <!-- Campo para el nombre -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br><br>
+
+        <label>Edad:</label>
+        <input type="number" id="edad" name="edad" min="0" max="20" required>
+        <br><br>
+
+        <label>Género:</label>
+        <input type="radio" id="genero" name="genero" value="Masculino"> Masculino
+        <input type="radio" id="genero" name="genero" value="Femenino"> Femenino
+        <br><br>
+
+        <label>País:</label>
+        <input type="radio" id="pais" name="pais" value="ecuador"> Ecuador
+        <input type="radio" id="pais" name="pais" value="chile"> chile
+        <input type="radio" id="pais" name="pais" value="argentina"> Argentina
+        <br><br>
+
+        <label>Profesión</label>
+        <input type="radio" id="profesion" name="profesion" value="doctor"> Doctor
+        <input type="radio" id="profesion" name="profesion" value="dentista"> dentista
+        <input type="radio" id="profesion" name="profesion" value="cajero"> cajero
+        <br><br>
+
+        <!-- Botón para enviar -->
+        <button type="submit">Enviar</button>
+        <script src="./IngresoaBD.js"></script>
+    </form>
+</body>
