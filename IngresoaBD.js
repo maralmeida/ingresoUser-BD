@@ -9,13 +9,17 @@ function generarIngreso() {
     const jsnombre = document.getElementById('nombre').value;
     const jsedad = document.getElementById("edad").value;
     // Se busca el radio button seleccionado por su 'name'
-    const jsgeneroSeleccionado = document.querySelector('input[name="genero"]:checked');
-    const jspaisSeleccionado = document.querySelector('input[name="pais"]:checked');
-    const jsprofesionSeleccionada = document.querySelector('input[name="profesion"]:checked');
+    const jsgeneroSeleccionado = document.querySelector('input[name="genero"]:checked').value;
+    const jspaisSeleccionado = document.querySelector('input[name="pais"]:checked').value;
+    const jsprofesionSeleccionada = document.querySelector('input[name="profesion"]:checked').value;
 
     // Mostrar los valores en el div 'flowcontrol'
     document.getElementById('muestranombre').textContent = jsnombre;
     document.getElementById('muestraedad').textContent = jsedad;
+    
+
+
+
     document.getElementById('muestragenero').textContent = jsgeneroSeleccionado;
     document.getElementById('muestrapais').textContent = jspaisSeleccionado;
     document.getElementById('muestraprofesion').textContent = jsprofesionSeleccionada;
