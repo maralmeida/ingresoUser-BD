@@ -1,3 +1,21 @@
+tener en cuenta:
+
+<h3> para usar PHP en IIS:
+* instalar la característica de CGI en el item de desarrollo de aplicaciones
+* habilitar la características en las asignaciones de controlador para CGI
+___
+  * antes de habilitar la características, se debe copiar los archivos de la aplicacion a una ruta y crear el sitio en el IIS
+  + se debe instalar php, descargar drivers a usar, crear la variable de entorno para PHP, modificar el archivo php.ini y en caarpeta ext agregar los drivers a         usar
+  * en archivo php.ini se debe agregar el nombre de los drivers a usar y el directorio de la carpeta de extensiones.
+___
+* al crear el sitio, revisar puertos libres, se puede con el comando netstat -a
+
+
+
+
+
+
+
 descargar php, poner en una ruta el extraído, agregar esa ruta a variable del sistema PATH como nuevo.
 ejemplo:
 descomprimo en C:\php   en variables del sistema busco path, edit, nuevo, ingreso esa ruta, aceptar x1000
