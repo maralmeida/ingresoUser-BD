@@ -1,0 +1,56 @@
+descargar php, poner en una ruta el extraído, agregar esa ruta a variable del sistema PATH como nuevo.
+ejemplo:
+descomprimo en C:\php   en variables del sistema busco path, edit, nuevo, ingreso esa ruta, aceptar x1000
+
+
+
+
+Step 3: Test PHP Installation
+
+Open Command Prompt (CMD).
+
+Run the following command to verify PHP is installed: 
+php -v 
+You should see the PHP version details if everything is set up correctly.
+
+Step 4: Configure php.ini 
+
+Navigate to C:\php.
+
+Copy php.ini-development and rename it to php.ini.
+
+Open php.ini in a text editor and enable required extensions by uncommenting lines (remove ;), e.g.:
+
+extension=curl
+extension=mbstring
+extension=pdo_mysql
+Copiar
+Save the file.
+
+Step 5: Run PHP Scripts
+
+To execute a PHP script:
+
+Navigate to the script's directory in CMD:
+
+cd path\to\your\script
+Copiar
+Run the script using:
+
+php script.php
+Copiar
+Tips
+
+Use php -S localhost:8000 to start a local development server.
+
+Ensure you download compatible extensions if needed for specific projects like WordPress
+1
+.
+
+
+
+
+
+
+PARA ODBC DRIVER CONEXION PHP CON MSSQL
+descargar dirvers necesarios, si uso php 3.2, driver debe ser 32. copiarlos en php /ext y agregarlos en php.ini archivo.
